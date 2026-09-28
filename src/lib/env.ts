@@ -18,7 +18,7 @@ export const env = createEnv({
   server: {},
   client: {
     NEXT_PUBLIC_SITE_URL: z.string().url().default("http://localhost:3000"),
-    NEXT_PUBLIC_SITE_NAME: z.string().min(1).default("JSON Editor"),
+    NEXT_PUBLIC_SITE_NAME: z.string().min(1).default("JsonCove"),
     NEXT_PUBLIC_DEFAULT_LOCALE: z.enum(["en", "zh"]).default("en"),
     NEXT_PUBLIC_REPOSITORY_URL: z.string().url().optional(),
     NEXT_PUBLIC_FEEDBACK_URL: z.string().url().optional(),
@@ -28,7 +28,7 @@ export const env = createEnv({
     NEXT_PUBLIC_GA_ID: z.string().min(1).optional(),
     NEXT_PUBLIC_ADSENSE_CLIENT: z.string().regex(/^ca-pub-\d+$/).optional(),
     NEXT_PUBLIC_MONACO_VS_URL: z.string().min(1).default("/monaco/vs"),
-    NEXT_PUBLIC_FILE_NAME_PREFIX: z.string().min(1).default("json-editor"),
+    NEXT_PUBLIC_FILE_NAME_PREFIX: z.string().min(1).default("jsoncove"),
   },
   experimental__runtimeEnv: {
     NEXT_PUBLIC_SITE_URL: configured(process.env.NEXT_PUBLIC_SITE_URL) ?? (vercelHost ? `https://${vercelHost}` : undefined),

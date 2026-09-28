@@ -7,7 +7,7 @@ test.describe("Sidenav", () => {
   });
 
   test("click logo", async ({ page }) => {
-    await page.getByRole("link", { name: /JSON For You/ }).click();
+    await page.getByRole("link", { name: /JsonCove/ }).click();
     await expect(page.getByRole("link", { name: "Try it now" })).toBeVisible();
   });
 

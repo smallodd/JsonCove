@@ -1,12 +1,5 @@
 {
   "": "",
-  "SiteBanner": {
-    "international": "For a more powerful experience, we recommend",
-    "internationalSuffix": "— it includes everything you need and more.",
-    "domestic": "json4u.cn 将于 2026 年 7 月 31 日停止服务，推荐使用",
-    "domesticSuffix": "——功能更完整、更强大。",
-    "dismiss": "关闭公告"
-  },
   "Loading": "加载中",
   "TextCompare": "文本比较",
   "compare": "比较",
@@ -127,10 +120,10 @@
   "FAQ": {
     "FAQ": "常见问题",
     "Others": "其他工具站",
-    "q_why_build": "为什么开发 JSON For You？",
-    "a_why_build1": "大部分同类网站只支持最常见的校验、格式化、最小化、转义、反转义和树形视图的功能，少部分网站提供了结构化比较。但很少有网站提供 BigInt 比较、文本比较、行内比较、数组差分比较的功能，所以本着“自己动手，丰衣足食”的想法做了 JSON For You。",
-    "a_why_build2": "经过两年的使用，我发现 JSON For You 在处理 JSON 数据上虽然足够好用了，但是在查看 JSON 数据上不够方便。比如在遇到复杂的 JSON 结构时，使用 JSON For You 虽然能快速查看格式化后的文本，但仅仅是文本形式无法让开发者快速了解 JSON 结构。因此我上线了 JSON For You 3.0.0，提供了图形视图和表视图两种视图模式，对于复杂的 object 类型数据可以通过图形视图快速了解，对于复杂的 array 类型数据则可以通过表视图快速了解。",
-    "q_support_features": "JSON For You 支持哪些功能？",
+    "q_why_build": "JsonCove 可以用来做什么？",
+    "a_why_build1": "JsonCove 将 JSON 校验、格式化、比较和转换集中在同一个浏览器工作区中。",
+    "a_why_build2": "你可以用图视图探索嵌套对象，用表视图查看数组。编辑器中的数据在浏览器内处理，使用核心工具无需注册账户。",
+    "q_support_features": "JsonCove 支持哪些功能？",
     "a_support_features1": "JSON 校验——有修改时会自动做校验。错误行会有标注，并提供充足的上下文帮助定位错误；",
     "a_support_features2": "JSON 格式化——拖拽文件或粘贴后会自动格式化，即使是无效的 JSON 数据也能格式化；",
     "a_support_features3": "JSON 最小化——去除所有的空白字符，将 JSON 数据压缩成一行；",
@@ -146,7 +139,7 @@
     "a_support_features13": "数组差分比较——如果两个 JSON 数组有差异，一般情况下我们其实不需要查看每一个元素的 diff，因为很可能会有比较多的噪音，并不方便我们肉眼查看。所以做了差分比较，提供与 git diff 一样简洁、人类可读的差异；",
     "a_support_features14": "文本比较——因为文本比较也是很常见的需求，所以支持了将无效 JSON 降级为文本比较（text diff），体验与 git diff 接近。",
     "q_what_is_jq": "jq 是什么，怎么使用 jq？",
-    "a_what_is_jq": "<jq>jq</jq> 是一个用于处理 JSON 数据的强大工具，你可以用它来选择、筛选、转换和重构 JSON 数据，就像 sed、awk、grep 和其他处理文本的工具一样。JSON For You 支持在线使用 jq（版本号 1.7），你可以通过快速搜索栏输入 \"jq\" 来使用它。",
+    "a_what_is_jq": "<jq>jq</jq> 是一个用于处理 JSON 数据的工具，可以选择、筛选、转换和重构数据。在 JsonCove 中，通过命令搜索栏搜索 \"jq\" 即可打开 jq 输入框。",
     "q_advantages": "与其他 JSON 工具站相比有什么不一样？",
     "Graph View & Table View": "图形视图 & 表视图",
     "Structured Comparison & Text Comparison": "结构化比较",
@@ -158,8 +151,8 @@
     "Support jq": "支持 jq"
   },
   "Metadata": {
-    "name": "JSON For You",
-    "title": "JSON For You | 在线JSON工具",
+    "name": "JsonCove",
+    "title": "JsonCove | 本地优先的 JSON 可视化工作台",
     "keywords": "json视图, json可视化, json格式化, json美化, json校验, json对比, json比较, json比对",
     "description": "在线JSON预览、格式化/美化、最小化、校验、比较。同时支持用图预览JSON数据，语义化/结构化比较两个JSON数据的差异，将JSON转换成CSV，将CSV转换成JSON，支持在线使用jq"
   },

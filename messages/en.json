@@ -1,12 +1,5 @@
 {
   "": "",
-  "SiteBanner": {
-    "international": "For a more powerful experience, we recommend",
-    "internationalSuffix": "— it includes everything you need and more.",
-    "domestic": "json4u.cn will be discontinued on July 31, 2026. We recommend",
-    "domesticSuffix": "— it offers a more complete and powerful toolkit.",
-    "dismiss": "Dismiss announcement"
-  },
   "Loading": "Loading",
   "TextCompare": "Text Compare",
   "compare": "Compare",
@@ -127,10 +120,10 @@
   "FAQ": {
     "FAQ": "Frequently Asked Questions",
     "Others": "Others",
-    "q_why_build": "Why build JSON For You?",
-    "a_why_build1": "Most similar sites only support the most common validate, format, minify, escape, unescape and tree view features, a small number of sites provide a structured comparison. But few sites provide BigInt comparison, text comparison, in-line comparison, array difference comparison, so I made JSON For You to address it.",
-    "a_why_build2": "After two years of use, I found that JSON For You is good enough to process JSON data, but it is not convenient to view JSON data. For example, when encountering a complex JSON structure, JSON For You can quickly view the formatted text, but only the text form can't let developers quickly understand the JSON structure. Therefore, I have launched JSON For You 3.0.0, which provides two view modes: graph view and table view. For complex object type data, you can quickly understand it through the graph view, and for complex array type data, you can quickly understand it through the table view.",
-    "q_support_features": "What features does JSON For You support?",
+    "q_why_build": "What is JsonCove for?",
+    "a_why_build1": "JsonCove brings JSON validation, formatting, comparison, and conversion into one browser-based workspace.",
+    "a_why_build2": "Use the graph view to explore nested objects and the table view to inspect arrays. Editor content is processed in your browser, and the core tools are available without an account.",
+    "q_support_features": "What features does JsonCove support?",
     "a_support_features1": "JSON Validation - Automatically validates when modified. Error lines will be marked, and sufficient context will be provided to help locate errors.",
     "a_support_features2": "JSON Formatting - Automatically formats when dragging files or pasting, even if the JSON data is invalid.",
     "a_support_features3": "JSON Minimization - Removes all whitespace characters, compressing the JSON data into a single line.",
@@ -145,8 +138,8 @@
     "a_support_features12": "Word-by-Word Comparison - Sometimes two JSON data sets have only minor differences, such as two long strings that differ by only one or two words, making it difficult to visually identify the specific inconsistencies. Therefore, word-by-word comparison is supported, allowing you to easily spot the exact diffs.",
     "a_support_features13": "Array Diff Comparison - If two JSON arrays have differences, we generally do not need to view the diff of every single element, as there may be a lot of noise that is inconvenient for visual inspection. Therefore, a diff comparison is provided, offering a concise, human-readable difference similar to git diff.",
     "a_support_features14": "Text Comparison - Since text comparison is also a common requirement, support has been added to downgrade invalid JSON to text comparison (text diff), providing an experience similar to git diff.",
-    "q_what_is_jq": "What is jq and how to use it in JSON For You?",
-    "a_what_is_jq": "<jq>jq</jq> is like sed for JSON data - you can use it to slice and filter and map and transform structured data with the same ease that sed, awk, grep and friends let you play with text. JSON For You support to use jq online (version 1.7), you can input \"jq\" in the quick command bar to use it.",
+    "q_what_is_jq": "What is jq and how can I use it in JsonCove?",
+    "a_what_is_jq": "<jq>jq</jq> is like sed for JSON data - you can use it to slice, filter, map, and transform structured data. In JsonCove, search for \"jq\" in the command bar to open the jq input.",
     "q_advantages": "What are the differences from other JSON websites?",
     "Graph View & Table View": "Graph View & Table View",
     "Structured Comparison & Text Comparison": "Structured Comparison & Text Comparison",
@@ -158,8 +151,8 @@
     "Support jq": "Support jq"
   },
   "Metadata": {
-    "name": "JSON For You",
-    "title": "JSON For You | The best online JSON tool",
+    "name": "JsonCove",
+    "title": "JsonCove | Private JSON Workspace",
     "keywords": "json viewer, json formatter, json beautifier, pretty json, json validate, json compare",
     "description": "Online JSON view, format, minify, validate and compare. It also provides graph view to preview JSON data, semantic comparing two JSON diffs, convert JSON to CSV or CSV to JSON and support jq online."
   },

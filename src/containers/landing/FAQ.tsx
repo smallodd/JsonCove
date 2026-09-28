@@ -3,6 +3,7 @@ import Section from "@/components/Section";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import Typography from "@/components/ui/typography";
 import { MessageKey } from "@/global";
+import { siteConfig } from "@/lib/site-config";
 import { CircleX, CircleCheck } from "lucide-react";
 import { useTranslations } from "next-intl";
 
@@ -65,7 +66,7 @@ function Advantages() {
         <tr>
           <th className="bg-muted" />
           <th align="center" className="bg-muted border-x lg:min-w-36 md:min-w-32 p-2">
-            {"JSON For You"}
+            {siteConfig.name}
           </th>
           <th align="center" className="bg-muted lg:min-w-36 md:min-w-32 p-2">
             {t("Others")}

@@ -1,8 +1,8 @@
 <p align="center">
-<img src="./src/app/icon.svg" height="150" alt="JSON editor logo">
+<img src="./src/app/icon.svg" height="150" alt="JsonCove logo">
 </p>
 
-# JSON Editor
+# JsonCove
 
 A privacy-first JSON visualization and processing tool. JSON is parsed and transformed in your browser; this application does not provide a server-side API for editor content.
 
@@ -22,13 +22,15 @@ Vercel supplies a default deployment URL. Set these variables to customize your 
 
 ```dotenv
 NEXT_PUBLIC_SITE_URL=https://json.example.com
-NEXT_PUBLIC_SITE_NAME=My JSON Tool
+NEXT_PUBLIC_SITE_NAME=JsonCove
 NEXT_PUBLIC_DEFAULT_LOCALE=en
 NEXT_PUBLIC_REPOSITORY_URL=https://github.com/your-account/your-repository
 NEXT_PUBLIC_FEEDBACK_URL=https://github.com/your-account/your-repository/issues/new
 ```
 
 The interface follows the browser's preferred language when it is Chinese or English. `NEXT_PUBLIC_DEFAULT_LOCALE` is the fallback when neither language is preferred or no language preference is sent; it defaults to English.
+
+`JsonCove` is the default site name. If `NEXT_PUBLIC_SITE_NAME` is already set in Vercel, update it to `JsonCove` there as well; that value overrides the default in page titles and navigation.
 
 Optional integrations are disabled unless you configure them:
 

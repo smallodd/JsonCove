@@ -160,6 +160,29 @@
     "finalTitle": "See what your JSON is telling you.",
     "finalDescription": "Open the workspace and explore your data with a little more clarity."
   },
+  "Docs": {
+    "backHome": "Back to home",
+    "tutorialEyebrow": "Learn the workspace",
+    "tutorialTitle": "Guides for working with JSON.",
+    "tutorialDescription": "Start with the essentials, then find a focused guide for the tool you need.",
+    "changelogEyebrow": "Project history",
+    "changelogTitle": "Changelog",
+    "changelogDescription": "A record of the original project's features and fixes, preserved with its contributor credits.",
+    "openEditor": "Open the editor"
+  },
+  "Legal": {
+    "eyebrow": "The important details",
+    "backHome": "Back to home",
+    "navigation": "Legal pages",
+    "privacyTitle": "Privacy",
+    "privacyDescription": "A clear view of what stays in your browser and when other services may be involved.",
+    "termsTitle": "Terms of Use",
+    "termsDescription": "The essentials for using this independently operated open-source tool.",
+    "readTerms": "Read the terms of use",
+    "readPrivacy": "Read the privacy notice",
+    "openPage": "Open full page",
+    "close": "Close"
+  },
   "FAQ": {
     "FAQ": "Frequently Asked Questions",
     "Others": "Others",

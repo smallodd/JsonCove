@@ -1,4 +1,5 @@
 import Link from "next/link";
+import MdxPage from "@/app/(home)/(mdx)/MdxPage";
 import { type Href } from "@/components/LinkButton";
 import GitHub from "@/components/icons/GitHub";
 import Logo from "@/components/icons/Logo";
@@ -6,6 +7,7 @@ import Twitter from "@/components/icons/Twitter";
 import Weibo from "@/components/icons/Weibo";
 import { siteConfig } from "@/lib/site-config";
 import { useTranslations } from "next-intl";
+import LegalDialog from "./LegalDialog";
 
 export default function Footer() {
   const t = useTranslations("Home");
@@ -45,12 +47,28 @@ export default function Footer() {
 }
 
 function Legal() {
-  const t = useTranslations("Home");
+  const t = useTranslations("Legal");
 
   return (
     <div className="flex items-center lg:gap-8 lg:ml-0 ml-auto gap-4">
-      <FooterLink href="/terms" title={t("Terms")} />
-      <FooterLink href="/privacy" title={t("Privacy")} />
+      <LegalDialog
+        title={t("termsTitle")}
+        description={t("termsDescription")}
+        href="/terms"
+        openPageLabel={t("openPage")}
+        closeLabel={t("close")}
+      >
+        <MdxPage dir="(mdx)/terms" plain />
+      </LegalDialog>
+      <LegalDialog
+        title={t("privacyTitle")}
+        description={t("privacyDescription")}
+        href="/privacy"
+        openPageLabel={t("openPage")}
+        closeLabel={t("close")}
+      >
+        <MdxPage dir="(mdx)/privacy" plain />
+      </LegalDialog>
     </div>
   );
 }

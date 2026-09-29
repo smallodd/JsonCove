@@ -1,9 +1,10 @@
-import MdxPage, { mdxGenMetadata } from "../MdxPage";
+import DocsPage from "../DocsPage";
+import { mdxGenMetadata } from "../MdxPage";
 
 export async function generateMetadata() {
   return mdxGenMetadata(__dirname);
 }
 
 export default async function Page() {
-  return <MdxPage dir={__dirname} />;
+  return <DocsPage kind="tutorial" dir={__dirname} />;
 }

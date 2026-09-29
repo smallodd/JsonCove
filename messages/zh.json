@@ -114,7 +114,7 @@
     "import_csv_img_desc": "导入并转换 CSV 文件",
     "Give a rating": "进行评价",
     "Terms": "服务协议",
-    "Privacy": "隐私政策",
+    "Privacy": "隐私说明",
     "Friends": "友情链接:"
   },
   "Landing": {
@@ -159,6 +159,29 @@
     "finalEyebrow": "准备好了就开始",
     "finalTitle": "让 JSON 的结构一目了然。",
     "finalDescription": "打开工作区，更清晰地探索和处理你的数据。"
+  },
+  "Docs": {
+    "backHome": "返回首页",
+    "tutorialEyebrow": "熟悉工作区",
+    "tutorialTitle": "一步步用好 JSON 工具。",
+    "tutorialDescription": "从基础操作开始，按需要找到对应功能的详细教程。",
+    "changelogEyebrow": "项目历史",
+    "changelogTitle": "更新日志",
+    "changelogDescription": "保留原项目的功能演进与问题修复记录，以及贡献者署名。",
+    "openEditor": "打开编辑器"
+  },
+  "Legal": {
+    "eyebrow": "重要事项，清楚说明",
+    "backHome": "返回首页",
+    "navigation": "相关文档",
+    "privacyTitle": "隐私说明",
+    "privacyDescription": "了解哪些数据留在浏览器中，以及何时可能涉及其他服务。",
+    "termsTitle": "服务协议",
+    "termsDescription": "使用这个独立运营的开源工具前，值得了解的基本约定。",
+    "readTerms": "阅读使用条款",
+    "readPrivacy": "阅读隐私说明",
+    "openPage": "在新页面中打开",
+    "close": "关闭"
   },
   "FAQ": {
     "FAQ": "常见问题",

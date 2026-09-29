@@ -1,12 +1,9 @@
 import Link from "next/link";
-import LinkButton, { type Href } from "@/components/LinkButton";
+import { type Href } from "@/components/LinkButton";
 import GitHub from "@/components/icons/GitHub";
 import Logo from "@/components/icons/Logo";
-import { Badge } from "@/components/ui/badge";
-import { Separator } from "@/components/ui/separator";
-import Typography from "@/components/ui/typography";
-import { version } from "@/lib/env";
 import { siteConfig } from "@/lib/site-config";
+import { ArrowUpRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 export default function Header() {
@@ -17,39 +14,47 @@ export default function Header() {
   ];
 
   return (
-    <div className="sticky top-0 z-10 bg-white flex md:h-12 h-14 items-center justify-center w-full border-b">
-      <nav className="flex items-center w-full h-full max-w-page-header md:px-8 px-4">
-        <Link prefetch={false} href="/" className="flex items-center gap-2 pointer mr-2">
-          <Logo />
-          <span className="font-bold">{siteConfig.name}</span>
+    <div className="sticky top-0 z-20 flex h-16 w-full items-center justify-center border-b border-[#dce7df] bg-[#f8f8f3]/95 backdrop-blur-md">
+      <nav className="flex h-full w-full max-w-page-header items-center px-5 sm:px-10 lg:px-16">
+        <Link prefetch={false} href="/" className="mr-9 flex items-center gap-2.5 text-[#173d36]">
+          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#d9f1e6]">
+            <Logo size={22} />
+          </span>
+          <span className="text-lg font-semibold tracking-[-0.04em]">{siteConfig.name}</span>
         </Link>
-        <Badge variant="secondary">{`v${version}`}</Badge>
-        <div className="md:flex hidden items-center gap-4 ml-4">
+        <div className="hidden items-center gap-7 sm:flex">
           {items.map((item) => (
             <Link
               prefetch={false}
               href={item.href as Href}
               key={item.title}
-              className="pointer block w-fit hover:text-sky-500"
+              className="text-sm font-medium text-[#61776d] transition-colors hover:text-[#173d36]"
               target={item.href.startsWith("/") ? "" : "_blank"}
             >
-              <Typography variant="p" className="text-primary">
-                {item.title}
-              </Typography>
+              {item.title}
             </Link>
           ))}
         </div>
         <div className="ml-auto" />
-        <div className="flex items-center h-full py-3 gap-4">
-          <LinkButton href="/editor" variant="default">
-            {t("Editor")}
-          </LinkButton>
-          <Separator className="md:flex hidden" orientation="vertical" />
+        <div className="flex items-center gap-4">
           {siteConfig.repositoryUrl && (
-            <Link className="md:flex hidden" href={siteConfig.repositoryUrl} target="_blank" rel="noopener">
-              <GitHub className="w-6 h-6" />
+            <Link
+              className="hidden text-[#61776d] transition-colors hover:text-[#173d36] md:flex"
+              href={siteConfig.repositoryUrl}
+              target="_blank"
+              rel="noopener"
+              aria-label="GitHub"
+            >
+              <GitHub className="h-5 w-5" />
             </Link>
           )}
+          <Link
+            href="/editor"
+            className="inline-flex h-9 items-center gap-2 rounded-lg bg-[#173d36] px-4 text-sm font-semibold text-white transition-colors hover:bg-[#27594d]"
+          >
+            {t("Editor")}
+            <ArrowUpRight className="h-4 w-4" />
+          </Link>
         </div>
       </nav>
     </div>

@@ -19,18 +19,32 @@ export function useRevealNode(
 
   // compute the position and the virtual graph of the reveal node.
   useEffect(() => {
-    (async () => {
-      if (isNeedReveal && revealPosition.treeNodeId) {
-        const res = await window.worker.setTableRevealPosition(revealPosition);
-        if (!res) {
-          console.l("skip reveal position in table:", revealPosition);
-          return;
-        }
+    if (!window.worker || !isNeedReveal || !revealPosition.treeNodeId || tableGrid.grid.length === 0) {
+      return;
+    }
 
-        const { x, y } = tableGrid.grid[res.row][res.col];
-        scrollTo(virtualizer, containerRef, x, y);
+    let cancelled = false;
+    (async () => {
+      const res = await window.worker.setTableRevealPosition(revealPosition);
+      if (cancelled) {
+        return;
+      }
+
+      if (!res) {
+        console.l("skip reveal position in table:", revealPosition);
+        return;
+      }
+
+      // The worker may have built a newer table than the grid currently rendered.
+      const cell = tableGrid.grid[res.row]?.[res.col];
+      if (cell) {
+        scrollTo(virtualizer, containerRef, cell.x, cell.y);
       }
     })();
+
+    return () => {
+      cancelled = true;
+    };
   }, [revealPosition, isNeedReveal, tableGrid]);
 }
 
